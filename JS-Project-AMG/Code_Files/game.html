@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Memory Game</title>
+    <link rel="stylesheet" href="game_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body onload="startTimer()">
+    <div class="container">
+        <header>
+            <div class="hdr-flx">
+                <div class="flx1">
+                    <nav>
+                        <a href="login.html" class="txt-style">Login</a>
+                        <a href="game.html" class="txt-style">Game</a>
+                        <a href="about.html" class="txt-style">About</a>
+                    </nav>
+                </div>
+                <div class="flx1 dv-logo"><img src="../Imgs/AMG-logo.png" alt="animal memory game text" class="logo">
+                </div>
+                <div class="flx1"><span id="txt-username"></span></div>
+            </div>
+        </header>
+        <main>
+                <div id="continer_screen_end">
+                <h2 id="game_over">GAME OVER</h2>
+                <label id="score"></label>
+                    <button id="play_again"value="Play Again">Restart</button>
+                    <button id="page_score" value="Table Score"> <a id="table_score_link" href="javascript:document.location.href=screenPage()">Score Page</a></button>
+                </div>
+            <div class="main-container">
+                <section class="sec-game_instructions">
+                    <div class="sec-game_instructions-flx">
+                        <div class="instructions-title txt-style">Game Instructions</div>
+                        <li class="instructions-txt txt-style">
+                            <ul>click on a card to flip it and see the animal thats around the card.</ul>
+                            <ul>Match every card to score more points.</ul>
+                            <ul>If you fail to match the cards 3 times, you will lose.</ul>
+                        </li>
+                    </div>
+                </section>
+                <section class="sec-cards">
+                    <div class="dCards">
+                        <div class="line-cards">
+                            <div class="card lion">
+                                <img class="animal-card" src="../Imgs/cards/LionCard.png" alt="Lion Card">
+                                <img class="start-card" src="../Imgs/cards/back_card.png" alt="AMG logo Card">
+                            </div>
+                            <div class="card monkey">
+                                <img class="animal-card" src="../Imgs/cards/MonkeyCard.png" alt="Monkey Card">
+                                <img class="start-card" src="../Imgs/cards/back_card.png" alt="AMG logo Card">
+                            </div>
+                            <div class="card dog">
+                                <img class="animal-card" src="../Imgs/cards/DogCard.png" alt="Dog Card">
+                                <img class="start-card" src="../Imgs/cards/back_card.png" alt="AMG logo Card">
+                            </div>
+                            <div class="card giraffe">
+                                <img class="animal-card" src="../Imgs/cards/GiraffeCard.png" alt="Giraffe Card">
+                                <img class="start-card" src="../Imgs/cards/back_card.png" alt="AMG logo Card">
+                            </div>
+                        </div>
+                        <div class="line-cards">
+                            <div class="card hippo">
+                                <img class="animal-card" src="../Imgs/cards/HippoCard.png" alt="Hippo Card">
+                                <img class="start-card" src="../Imgs/cards/back_card.png" alt="AMG logo Card">
+                            </div>
+                            <div class="card hippo">
+                                <img class="animal-card" src="../Imgs/cards/HippoCard.png" alt="Hippo Card">
+                                <img class="start-card" src="../Imgs/cards/back_card.png" alt="AMG logo Card">
+                            </div>
+                            <div class="card lion">
+                                <img class="animal-card" src="../Imgs/cards/LionCard.png" alt="Lion Card">
+                                <img class="start-card" src="../Imgs/cards/back_card.png" alt="AMG logo Card">
+                            </div>
+                            <div class="card elephant">
+                                <img class="animal-card" src="../Imgs/cards/ElephantCard.png" alt="Elephant Card">
+                                <img class="start-card" src="../Imgs/cards/back_card.png" alt="AMG logo Card">
+                            </div>
+                        </div>
+                        <div class="line-cards">
+                            <div class="card dog">
+                                <img class="animal-card" src="../Imgs/cards/DogCard.png" alt="Dog Card">
+                                <img class="start-card" src="../Imgs/cards/back_card.png" alt="AMG logo Card">
+                            </div>
+                            <div class="card giraffe">
+                                <img class="animal-card" src="../Imgs/cards/GiraffeCard.png" alt="Giraffe Card">
+                                <img class="start-card" src="../Imgs/cards/back_card.png" alt="AMG logo Card">
+                            </div>
+                            <div class="card monkey">
+                                <img class="animal-card" src="../Imgs/cards/MonkeyCard.png" alt="Monkey Card">
+                                <img class="start-card" src="../Imgs/cards/back_card.png" alt="AMG logo Card">
+                            </div>
+                            <div class="card elephant">
+                                <img class="animal-card" src="../Imgs/cards/ElephantCard.png" alt="Elephant Card">
+                                <img class="start-card" src="../Imgs/cards/back_card.png" alt="AMG logo Card">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec-badges">
+                    <div class="sec-badges-flx">
+                        <div class="menu-T_S_R flx1">
+                            <input type="button" value="Reset" class="btn" onclick="resetTimer()" />
+                            <span class="timer">
+                              <label id="minutes">00</label>:<label id="seconds">00</label>
+                            </span>
+                            <input type="button" id="btn_stop_move" class="btn" value="stop" onclick="timerSet()" /> 
+                        </div>
+                        <div class="badges-text txt-style flx1" id="points"></div>
+                        <!-- <div class="nextPage flx1 txt-style">
+                            <button type="button" id="toScorePage" class="btn">View results table</button>
+                        </div> -->
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script type="text/javascript" src="loginScript.js"></script> <!-- UserName login script -->
+    <script type="text/javascript" src="gameScripts.js"></script> <!-- card game script -->
+    
+    <!-- <script type="text/javascript" src="scripts.js"></script> -->
+</body>
+
+</html>

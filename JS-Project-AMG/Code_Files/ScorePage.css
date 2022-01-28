@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../Imgs/AMG-Background-clean_web.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden; 
+}
+/* header style start here  */
+header {
+    width: 100%;
+    height: 19vh;
+    background-image: url(../Imgs/header\ wood.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Staatliches', cursive;
+    z-index: 2;
+}
+.hdr-flx {
+    width: 95%;
+    height: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+.flx1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+}
+.flx1:first-child > nav a {
+    font-size: 2vw;
+    margin-right: 4rem;
+    text-decoration: none;
+}
+.flx1:last-child span {
+    font-size: 4vw;
+    padding-left: 10%;
+}
+header nav {
+    text-align: center;
+}
+header  nav > div {
+    font-size: 3rem;
+}
+.fa-envelope {
+    margin-left: 2rem;
+    margin-right: -2.5rem;
+}
+/* .dvlogo {
+    position: relative;
+} */
+.logo {
+    width: 23%;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+}
+#txt-username{
+    font-size: 2vw;
+    color: #FFFFFF;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%);
+}
+.txt-style {
+    color: #FFFFFF;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+/* Main style start here */
+main {
+    display: flex;
+    width: 100vw;
+    height: 81vh;
+    position: relative;
+}
+.scoreContainer{
+    width: 95%;
+    height: 98%;
+    position: relative;
+    margin-top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly
+}
+.score {
+    background-image: url(../Imgs/wood_texture_for_sideSec.png);
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.2rem;
+}
+.sTitle {
+    width: 100%;
+    height: 12%;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2%;
+}
+.user {
+    width: 100%;
+    font-size: 1.5rem;
+    flex-direction: column;
+}
+/* .scoreByTime .orderTime:nth-of-type(2) {
+    order: 1;
+}
+.scoreByTime .orderTime:nth-of-type(3) {
+    order: 2;
+}
+.scoreByTime .orderTime:nth-of-type(4) {
+    order: 3;
+}
+.scoreByTime .orderTime:nth-of-type(5) {
+    order: 4;
+} */

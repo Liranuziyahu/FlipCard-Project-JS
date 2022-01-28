@@ -1,0 +1,305 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../Imgs/AMG-Background-clean_web.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden; 
+}
+/* header style start here  */
+header {
+    width: 100%;
+    height: 9vw;
+    background-image: url(../Imgs/header\ wood.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Staatliches', cursive;
+    z-index: 2;
+}
+.hdr-flx {
+    width: 95%;
+    height: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+.flx1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+}
+/* #screen_end{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 5%;
+
+} */
+#continer_screen_end{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 66%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 99;
+    display: none;
+}
+#game_over
+{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+#score
+{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color:#f0c33c;
+    font-weight: 500;
+}
+#play_again{
+    width: 12%;
+    height: 8%;
+    background-color:#f0c33c;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+#page_score{
+    width: 12%;
+    height: 8%;
+    background-color:#4f94d4;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+#page_score > a {
+    text-decoration: none;
+    color: black;
+}
+.flx-btn{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+#txt-username{
+font-size: 2vw;
+color: #FFFFFF;
+text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgb(0 0 0 / 10%), 0 0 5px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%), 0 3px 5px rgb(0 0 0 / 20%), 0 5px 10px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 20%), 0 20px 20px rgb(0 0 0 / 15%);
+}
+.txt-style {
+    color: #FFFFFF;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+.flx1:first-child > nav a {
+    font-size: 2vw;
+    margin-right: 4rem;
+    text-decoration: none;
+}
+.flx1:last-child span {
+    font-size: 4vw;
+    padding-left: 10%;
+}
+.dvlogo {
+    position: relative;
+}
+.logo {
+    width: 23%;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+}
+/* main style start here */
+.main-container {
+    width: 100%;
+    height: 85vh;
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* game_instructions style start here  */
+.sec-game_instructions {
+    width: 22%;
+    height: 90%;
+    background-image: url("../Imgs/wood_texture_for_sideSec.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 2vw;
+}
+.sec-game_instructions-flx {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.instructions-title {
+    margin-top: 5%;
+    font-size: 2.225vw;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.instructions-txt {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* card section style start here  */
+.sec-cards {
+    width: 40%;
+    height: 90%;
+    background-image: url("../Imgs/wood_texture.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+}
+.dCards {
+    width: 90%;
+    height: 100%;
+    padding: 2% 0 2% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.line-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+/* .card.dog
+{
+    background-position: center;
+    background-size: cover;
+}
+.card.lion{
+    background-position: center;
+    background-size: cover;
+} */
+.card {
+    width: 22%;
+    height: 99%;
+    box-shadow: 2px 2px 13px 3px rgba(119,96,24,0.66);
+    background-image: url("../Imgs/cards/back_card.png");
+    background-position:center;
+    background-size:cover;
+    position: relative;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    transform: scale(1);
+    transition: transform .5s;
+}
+.flip { /* JS Class */
+    transform: rotateY(180deg);
+}
+.start-card,
+.animal-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: visible;
+
+}
+.animal-card {
+    transform: rotateY(180deg);
+  }
+/* badges section style start here*/
+.sec-badges {
+    width: 22%;
+    height: 90%;
+    background-image: url("../Imgs/wood_texture_for_sideSec.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sec-badges-flx {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.menu-T_S_R {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#time{
+    display: flex;
+    width: 50px;
+    font-size: 2rem;
+    color: red;
+    font-weight: 900;
+}
+.btn {
+    font-size: 2rem;
+    padding: 2% 5%;
+    border-radius: 2rem;
+}
+.badges-text {
+    width: 100%;
+    height: 8%;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 2%;
+    text-transform: uppercase;
+}
+.lives {
+    display: flex;
+    flex-direction: column;
+}
+.heartTitle {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+.hearts {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.lives > .hearts img {
+    width: 70px;
+    height: 70px;
+}
+.nextPage {
+    font-size: 2rem;
+}
+/* טיימר */
+.timer{
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #eee;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

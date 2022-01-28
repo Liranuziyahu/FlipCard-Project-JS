@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Memory Game</title>
+    <link rel="stylesheet" href="ScorePage.css">
+    <script src="https://kit.fontawesome.com/a1e2ee4e79.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+<body onload="sortScorePoint()">
+    <div class="container">
+        <header>
+            <div class="hdr-flx">
+                <div class="flx1">
+                    <nav>
+                        <a href="login.html" class="txt-style">Play Again</a>
+                        <div class="txt-style">
+                            Share with friends : 
+                            <a href="javascript:document.location.href=emailTo()"
+                            ><i class="far fa-envelope txt-style"></i></a>
+                            <a href="javascript:document.location.href=massageWhatsapp()"
+                            ><i class="fab fa-whatsapp txt-style"></i></a>
+                        </div>
+                    </nav>
+                    
+                </div>
+                <div class="flx1 dv-logo"><img src="../Imgs/AMG-logo.png" alt="animal memory game text" class="logo">
+                </div>
+                <div class="flx1"><span id="txt-username"></span></div>
+            </div>
+        </header>
+        <main>
+            <div class="scoreContainer">
+                <section class="scoreByTime score">
+                    <!-- <table id="timeTable">
+                        <tr>
+                            <td id= "user_name_score"></td>
+                            <td id= "email_score"></td>
+                            <td id= "timer_score" value=04.03></td>
+                        </tr>
+                        <tr>
+                            <td>UserName : DorElisha</td>
+                            <td>Mail : DorElishaElisha@gmail.com</td>
+                            <td value=03.07>Time finish : 01:07</td>
+                        </tr>
+                        <tr>
+                            <td>UserName : LiranUziyahu</td>
+                            <td>Mail : LiranUziyahu@gmail.com</td>
+                            <td value=01.35>Time finish : 01:35</td>
+                        </tr>
+                        <tr>
+                            <td>UserName : Mohamad</td>
+                            <td>Mail : Mohamad@gmail.com</td>
+                            <td value=02.42>Time finish : 02:42</td>
+                        </tr>
+                    </table> -->
+                     <div class="sTitle txt-style">Score by time</div>
+                    <div class="user flx1 txt-style orderTime">
+                          <p id= "user_name_score"></p>             <!-- userName : 'xxx'       -->
+                        <p id= "email_score"></p>                   <!-- email : 'xxx@gmail.com'-->
+                        <p id= "timer_score"></p>                   <!-- Time : 'xx:xx'         -->
+                    </div>
+                    <div class="user flx1 txt-style orderTime" id="userDan">
+                        <p>UserName : DanMenah </p>
+                        <p>Mail : danMenahem@gmail.com</p>
+                        <p>Time finish : 00:42</p>
+                    </div>
+                    <div class="user flx1 txt-style orderTime" id="userSapir">
+                        <p>UserName : SapirOv</p>
+                        <p>Mail : sapirovgash@gmail.com</p>
+                        <p>Time finish : 01:07</p>
+                    </div>
+                    <div class="user flx1 txt-style orderTime">
+                        <p>UserName : Billy</p>
+                        <p>Mail : billyboy@walla.com</p>
+                        <p>Time finish : 02:42</p>
+                    </div>
+                </section>
+                <section class="scoreByPoints score">
+                    <div class="sTitle txt-style">Score by points</div>
+                    <div class="user flx1 txt-style orderScore">
+                        <p id=user_name_score_point></p>
+                        <p id="email_score_points"></p>
+                        <p id=point_score></p>
+                    </div>
+                    <div class="user flx1 txt-style orderScore">
+                        <p>UserName : DanMenah </p>
+                        <p>Mail : danMenahem@gmail.com</p>
+                        <p>Points : 150</p>
+                    </div>
+                    <div class="user flx1 txt-style orderScore">
+                        <p>UserName : SapirOv </p>
+                        <p>Mail : sapirovgash@gmail.com</p>
+                        <p>Points : 35</p>
+                    </div>
+                    <div class="user flx1 txt-style orderScore">
+                        <p>UserName : Billy </p>
+                        <p>Mail : billyboy@walla.com</p>
+                        <p>Points : 25</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script type="text/javascript" src="loginScript.js"></script> <!-- UserName login script -->
+    <script type="text/javascript" src="scorePage.js"></script>
+
+</body>
+</html>

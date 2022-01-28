@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Memory Game</title>
+    <link rel="stylesheet" href="login_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="hdr-flx">
+                <div class="flx1">
+                    <nav class="nav-flx">
+                        <a href="#" class="txt-style">Login</a>
+                        <a href="game.html" class="txt-style">Game</a>
+                        <a href="about.html" class="txt-style">About</a>
+                    </nav>
+                </div>
+                <div class="flx1 dv-logo"><img src="../Imgs/AMG-logo.png" alt="animal memory game text" class="logo"></div>
+                <div class="flx1"><span class="txt-style">Login to play!</span></div>
+            </div>
+        </header>
+        <main>
+            <section class="login-form">
+                <form action="../Code_Files/game.html"method="GET">
+                    <fieldset>
+                        <label for="user-name" class="txt-style">User name:</label>
+                        <input type="text" name="user_name" id="user-name" maxlength="12" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="mail" class="txt-style">Mail:</label>
+                        <input type="email" name="email" id="mail" required>
+                    </fieldset>
+                    <fieldset>
+                        <button id="btn_login"type="submit" href="Code_Files/game.html">Login</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </div>
+
+</body>
+</html>

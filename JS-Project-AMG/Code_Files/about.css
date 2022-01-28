@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+main{
+    background-color: #eee;
+}
+header{
+    height: 10%;
+}
+
+.profile_page{
+   text-align: center;
+}
+.section_one_main{
+    width: 100vw;
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+.binds_selfpic_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 10%;
+    
+}
+.Selfie_pic{
+    margin: 0 auto;
+    background-color: grey;
+    width: 152px;
+    height: 155px;
+    border-radius: 50%;
+    max-width: 89%;
+    max-height: 32%;
+    margin-left:8%;
+
+}
+.our_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 138px;
+    width: 100%;
+    margin-left: 7%;
+    align-items: flex-end
+}
+.section_one{
+    display: flex;
+    height: 450px;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    background-color: white;
+    margin: 0 auto;
+    align-items: flex-start;
+    width:65%;
+    margin-bottom: 17px;
+
+
+}
+.about_me{
+    text-align: center;
+    width: 82%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.about_me p{
+    font-family: 'Changa', sans-serif;
+    font-family: 'Noticia Text', serif;
+}
+.about_details{
+    display: flex;
+    width: 400px;
+    max-width:50%;
+    flex-direction: column;
+    align-items: center;
+   text-align: center;
+}
+footer{
+    width: 100vw;
+    height: 11.5vh;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: #eee;
+}
+footer p{
+    margin-top: 8px;
+}
+@media only screen and (min-width: 1024px){
+    .binds_selfpic_links{
+        margin-left: 3%;
+        margin-top: 5%;  
+    }
+}
