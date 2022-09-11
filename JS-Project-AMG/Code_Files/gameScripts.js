@@ -92,6 +92,7 @@ let tempclick = false;
             if(cardRest.classList.contains('flip'))
             {
                 cardRest.classList.remove('flip');
+                cardRest.children[0].style.zIndex='0'
                 cards.forEach( card => card.addEventListener('click', flipTheCard));  
             }
     };
@@ -111,12 +112,14 @@ let pointTxt = document.getElementById('points');
 pointTxt.innerHTML = "Your Score is: " + points;
 
 
-function flipTheCard() {  
+function flipTheCard() { 
     if(this.className!='flip')   
-    {          
+    {         
+        this.children[0].style.zIndex ='9999'
         console.log(this.className + "  not good");                                       // function to add a class name for each card that is clicked
         this.classList.add('flip');                                               // adding 'flip' class to the card that was clicked
-        if (!cardFlipped) {                                                       // if cardFlipped = false it will do it
+        if (!cardFlipped) {   
+                                                               // if cardFlipped = false it will do it
             cardFlipped = true;                                                   // cardFlipped changed to true
             firstCardChosed = this;                                                    // firstCardChosed get var of the clicked card        
             firstCardChosed.removeEventListener('click', flipTheCard);            // removing the option to click the card to make bugs not happen
@@ -180,6 +183,8 @@ function flipBack (){
     setTimeout(() => {                                                        // setting delay so the card will flip toghether after watching the cards
         firstCardChosed.classList.remove('flip');                             // remove the class flip from the card ( it means that the card will flip back)
         secondCardChosed.classList.remove('flip'); 
+        firstCardChosed.children[0].style.zIndex = '0'
+        secondCardChosed.children[0].style.zIndex = '0'
         firstCardChosed.addEventListener('click', flipTheCard); 
         secondCardChosed.addEventListener('click', flipTheCard); 
         canClick();  
@@ -213,6 +218,7 @@ play_again.addEventListener('click' , (event) =>{                             //
     {
         showCard.style.display = 'inherit';                                   //getting back the display of the cards
     }
+    restCard();
     resetTimer();                                                             //reset the timer by function
 });
 
