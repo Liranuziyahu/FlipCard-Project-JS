@@ -8,7 +8,7 @@
 .container {
     width: 100%;
     height: 100vh;
-    background-image: url("../Imgs/AMG-Background-clean_web.jpg");
+    background-image: url("./Imgs/AMG-Background-clean_web.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -18,7 +18,7 @@
 header {
     width: 100%;
     height: 19vh;
-    background-image: url(../Imgs/header\ wood.png);
+    background-image: url(./Imgs/header\ wood.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -101,7 +101,7 @@ main {
     justify-content: space-evenly
 }
 .score {
-    background-image: url(../Imgs/wood_texture_for_sideSec.png);
+    background-image: url(./Imgs/wood_texture_for_sideSec.png);
     background-size: cover;
     background-position: center;
     width: 25%;
